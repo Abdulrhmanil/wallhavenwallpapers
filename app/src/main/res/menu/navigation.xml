@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_topList"
+        android:icon="@drawable/ic_diamond"
+        android:title="Toplist" />
+
+
+    <item
+        android:id="@+id/navigation_latest"
+        android:icon="@drawable/ic_clock"
+        android:title="Latest" />
+
+    <item
+        android:id="@+id/navigation_random"
+        android:icon="@drawable/ic_random"
+        android:title="Random" />
+
+    <item
+        android:id="@+id/navigation_search"
+        android:icon="@drawable/ic_search"
+        android:title="Search"/>
+
+    <item
+        android:id="@+id/navigation_downloads_folder"
+        android:icon="@drawable/ic_folder"
+        android:title="Downloads"/>
+
+</menu>

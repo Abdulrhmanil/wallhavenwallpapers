@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ProgressBar
+        android:id="@+id/savingBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminateOnly="true"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/btnSave"
+        app:layout_constraintEnd_toEndOf="@+id/btnSave"
+        app:layout_constraintStart_toStartOf="@+id/btnSave"
+        app:layout_constraintTop_toTopOf="@+id/btnSave" />
+
+    <Button
+        android:id="@+id/btnSave"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:drawableTop="@drawable/stat_download_blue"
+        android:enabled="false"
+        android:text="SAVE"
+        android:textColor="@color/colorPrimaryDarkHeader"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnSetAs"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:drawableTop="@drawable/stat_gallery_blue"
+        android:enabled="false"
+        android:text="SET"
+        android:textColor="@color/colorPrimaryDarkHeader"
+        app:layout_constraintEnd_toStartOf="@+id/btnShare"
+        app:layout_constraintStart_toEndOf="@+id/btnSave"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnShare"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:drawableTop="@drawable/stat_share_blue"
+        android:enabled="false"
+        android:text="SHARE"
+        android:textColor="@color/colorPrimaryDarkHeader"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--Start line: invisible, use just for arraigning-->
+    <View
+        android:id="@+id/viewLine1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        android:background="#e9e9e9"
+        android:visibility="visible"
+        app:layout_constraintTop_toBottomOf="@+id/btnSetAs" />
+
+    <TextView
+        android:id="@+id/dis_txt_wallRes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        android:text="Resolution:"
+        android:textColor="@color/colorPrimaryDarkHeader"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewLine1" />
+
+
+    <View
+        android:id="@+id/viewLine2"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="#e9e9e9"
+        app:layout_constraintStart_toStartOf="@+id/viewLine1"
+        app:layout_constraintEnd_toEndOf="@+id/viewLine1"
+        app:layout_constraintBottom_toTopOf="@+id/dis_txt_numOfFav"
+        app:layout_constraintTop_toBottomOf="@+id/dis_txt_wallRes" />
+
+
+    <TextView
+        android:id="@+id/dis_txt_numOfFav"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Favorites:"
+        android:textColor="@color/colorPrimaryDarkHeader"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="@+id/dis_txt_wallRes"
+        app:layout_constraintTop_toBottomOf="@+id/dis_txt_wallRes" />
+
+    <View
+        android:id="@+id/viewLine3"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="#e9e9e9"
+        app:layout_constraintStart_toStartOf="@+id/viewLine1"
+        app:layout_constraintEnd_toEndOf="@+id/viewLine1"
+        app:layout_constraintBottom_toTopOf="@+id/dis_txt_Uploader"
+        app:layout_constraintTop_toBottomOf="@+id/dis_txt_numOfFav" />
+
+
+    <TextView
+        android:id="@+id/dis_txt_Uploader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Uploader:"
+        android:textColor="@color/colorPrimaryDarkHeader"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="@+id/dis_txt_wallRes"
+        app:layout_constraintTop_toBottomOf="@+id/dis_txt_numOfFav" />
+
+    <View
+        android:id="@+id/viewLine4"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="#e9e9e9"
+        app:layout_constraintStart_toStartOf="@+id/viewLine1"
+        app:layout_constraintEnd_toEndOf="@+id/viewLine1"
+        app:layout_constraintBottom_toTopOf="@+id/dis_txt_category"
+        app:layout_constraintTop_toBottomOf="@+id/dis_txt_Uploader" />
+
+    <TextView
+        android:id="@+id/dis_txt_category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Category:"
+        android:textColor="@color/colorPrimaryDarkHeader"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="@+id/dis_txt_wallRes"
+        app:layout_constraintTop_toBottomOf="@+id/dis_txt_Uploader" />
+
+    <View
+        android:id="@+id/viewLine5"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="#e9e9e9"
+        app:layout_constraintStart_toStartOf="@+id/viewLine1"
+        app:layout_constraintEnd_toEndOf="@+id/viewLine1"
+        app:layout_constraintBottom_toTopOf="@+id/dis_txt_size"
+        app:layout_constraintTop_toBottomOf="@+id/dis_txt_category" />
+
+    <TextView
+        android:id="@+id/dis_txt_size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Size:"
+        android:textColor="@color/colorPrimaryDarkHeader"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="@+id/dis_txt_wallRes"
+        app:layout_constraintTop_toBottomOf="@+id/dis_txt_category" />
+
+    <View
+        android:id="@+id/viewLine6"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="#e9e9e9"
+        app:layout_constraintStart_toStartOf="@+id/viewLine1"
+        app:layout_constraintEnd_toEndOf="@+id/viewLine1"
+        app:layout_constraintBottom_toTopOf="@+id/txt_views"
+        app:layout_constraintTop_toBottomOf="@+id/dis_txt_size" />
+
+
+    <TextView
+        android:id="@+id/dis_txt_views"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Views:"
+        android:textColor="@color/colorPrimaryDarkHeader"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="@+id/dis_txt_wallRes"
+        app:layout_constraintTop_toBottomOf="@+id/dis_txt_size" />
+
+
+    <View
+        android:id="@+id/viewLine7"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="#e9e9e9"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="@+id/viewLine1"
+        app:layout_constraintStart_toStartOf="@+id/viewLine1"
+        app:layout_constraintBottom_toTopOf="@+id/dis_txt_views"
+        app:layout_constraintTop_toBottomOf="@+id/dis_txt_name"/>
+
+
+
+    <TextView
+        android:id="@+id/dis_txt_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Name:"
+        android:textColor="@color/colorPrimaryDarkHeader"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="@+id/dis_txt_wallRes"
+        app:layout_constraintTop_toBottomOf="@+id/dis_txt_views" />
+
+
+    <View
+        android:id="@+id/viewLine8"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="12dp"
+        android:background="#e9e9e9"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="@+id/viewLine1"
+        app:layout_constraintStart_toStartOf="@+id/viewLine1"
+        app:layout_constraintTop_toBottomOf="@+id/dis_txt_name" />
+
+
+    <!--*****************************************************************************************-->
+
+    <TextView
+        android:id="@+id/txt_wallRes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="....."
+        android:textColor="@color/colorPrimaryLightHeader"
+        app:layout_constraintBottom_toBottomOf="@+id/dis_txt_wallRes"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toTopOf="@+id/dis_txt_wallRes"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/txt_numOfFav"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="....."
+        android:textColor="@color/colorPrimaryLightHeader"
+        app:layout_constraintBottom_toBottomOf="@+id/dis_txt_numOfFav"
+        app:layout_constraintStart_toStartOf="@+id/txt_wallRes"
+        app:layout_constraintTop_toTopOf="@+id/dis_txt_numOfFav" />
+
+    <TextView
+        android:id="@+id/txt_Uploader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="....."
+        android:textColor="@color/colorPrimaryLightHeader"
+        app:layout_constraintBottom_toBottomOf="@+id/dis_txt_Uploader"
+        app:layout_constraintStart_toStartOf="@+id/txt_wallRes"
+        app:layout_constraintTop_toTopOf="@+id/dis_txt_Uploader" />
+
+    <TextView
+        android:id="@+id/txt_category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="....."
+        android:textColor="@color/colorPrimaryLightHeader"
+        app:layout_constraintBottom_toBottomOf="@+id/dis_txt_category"
+        app:layout_constraintStart_toStartOf="@+id/txt_wallRes"
+        app:layout_constraintTop_toTopOf="@+id/dis_txt_category" />
+
+    <TextView
+        android:id="@+id/txt_size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="....."
+        android:textColor="@color/colorPrimaryLightHeader"
+        app:layout_constraintBottom_toBottomOf="@+id/dis_txt_size"
+        app:layout_constraintStart_toStartOf="@+id/txt_wallRes"
+        app:layout_constraintTop_toTopOf="@+id/dis_txt_size" />
+
+
+    <TextView
+        android:id="@+id/txt_views"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="....."
+        android:textColor="@color/colorPrimaryLightHeader"
+        app:layout_constraintBottom_toBottomOf="@+id/dis_txt_views"
+        app:layout_constraintStart_toStartOf="@+id/txt_wallRes"
+        app:layout_constraintTop_toTopOf="@+id/dis_txt_views" />
+
+    <TextView
+        android:id="@+id/txt_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="....."
+        android:textColor="@color/colorPrimaryLightHeader"
+        app:layout_constraintStart_toStartOf="@+id/txt_wallRes"
+        app:layout_constraintBottom_toBottomOf="@+id/dis_txt_name"
+        app:layout_constraintTop_toTopOf="@+id/dis_txt_name" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">WallHaven</string>
+    <string name="title_activity_show_photo">ShowPhotoActivity</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="resources_string_res"> 2000x3000 </string>
+    <string name="resources_string_fev">100</string>
+
+
+    <string name="menu_refresh">Refresh</string>
+
+    <string name="delete">delete</string>
+    <string name="cancel_deleting">Cancel</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_scroll_zoomed_photos">ScrollZoomedPhotosActivity</string>
+</resources>

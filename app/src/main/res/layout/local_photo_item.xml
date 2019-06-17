@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/selectableItemBackground">
+
+        <ImageView
+            android:id="@+id/imageLocal"
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:adjustViewBounds="true"
+            android:cropToPadding="false"
+            android:scaleType="center"
+            app:srcCompat="@drawable/ic_placeholder" />
+
+
+        <Button
+            android:id="@+id/btnDeleteLocalPhoto"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_delete"
+            android:textColor="@color/DarkGray"
+            android:text="DELETE"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageLocal" />
+
+        <Button
+            android:id="@+id/btnSetLocalPhoto"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_set"
+            android:text="SET"
+            android:textColor="@color/DarkGray"
+            app:layout_constraintEnd_toStartOf="@+id/btnShareLocalPhoto"
+            app:layout_constraintStart_toEndOf="@+id/btnDeleteLocalPhoto"
+            app:layout_constraintTop_toBottomOf="@+id/imageLocal" />
+
+        <Button
+            android:id="@+id/btnShareLocalPhoto"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_share"
+            android:text="SHARE"
+            android:textColor="@color/DarkGray"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageLocal" />
+
+
+
+        <!--<ImageButton-->
+            <!--android:id="@+id/btnDeleteDownloaded"-->
+            <!--style="@style/Widget.AppCompat.Button.Borderless"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:adjustViewBounds="true"-->
+            <!--app:layout_constraintStart_toStartOf="parent"-->
+            <!--app:layout_constraintTop_toBottomOf="@+id/imageDownloaded"-->
+            <!--app:srcCompat="@drawable/ic_delete" />-->
+
+        <!--<ImageButton-->
+            <!--android:id="@+id/btnSetDownloaded"-->
+            <!--style="@style/Widget.AppCompat.Button.Borderless"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:adjustViewBounds="true"-->
+            <!--app:layout_constraintEnd_toStartOf="@+id/btnShareDownloaded"-->
+            <!--app:layout_constraintStart_toEndOf="@+id/btnDeleteDownloaded"-->
+            <!--app:layout_constraintTop_toBottomOf="@+id/imageDownloaded"-->
+            <!--app:srcCompat="@drawable/ic_set" />-->
+
+        <!--<ImageButton-->
+            <!--android:id="@+id/btnShareDownloaded"-->
+            <!--style="@style/Widget.AppCompat.Button.Borderless"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:adjustViewBounds="true"-->
+            <!--app:layout_constraintEnd_toEndOf="parent"-->
+            <!--app:layout_constraintTop_toBottomOf="@+id/imageDownloaded"-->
+            <!--app:srcCompat="@drawable/ic_share" />-->
+
+
+    </android.support.constraint.ConstraintLayout>
+
+
+</android.support.v7.widget.CardView>

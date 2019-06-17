@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorPrimaryDarkHeader">#FF192573</color>
+    <color name="colorPrimaryLightHeader">#106176</color>
+    <color name="colorAccent">#40c6ff</color>
+    <color name="colorStatusBarColor">#3f3f3f</color>
+    <color name="GhostWhite">#f8f8ff</color>
+    <color name="WhiteSmoke">#f5f5f5</color>
+    <color name="White">#FFFFFF</color>
+    <color name="LightGray">#e4e4e4</color>
+    <color name="DarkGray">#7e7e7e</color>
+    <color name="GrayForSearch">#f1f1f1</color>
+
+
+
+
+
+    <color name="color_tab_1">#455C65</color>
+    <color name="color_tab_2">#00886A</color>
+    <color name="color_tab_3">#8B6B62</color>
+    <color name="color_tab_4">#6C4A42</color>
+    <color name="color_tab_5">#F63D2B</color>
+
+    <color name="color_notification_back">#ffcd33</color>
+    <color name="color_notification_text">#3E4757</color>
+
+    <array name="tab_colors">
+        <item name="tab_1">#455C65</item>
+        <item name="tab_2">#00886A</item>
+        <item name="tab_3">#8B6B62</item>
+        <item name="tab_4">#6C4A42</item>
+        <item name="tab_5">#F63D2B</item>
+    </array>
+
+</resources>
